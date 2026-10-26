@@ -1,20 +1,22 @@
-:root{--bg:#F4F6F2;--fg:#14302A;--muted:#4b5f59;--accent:#1F6F5C;--gold:#F2B84B;--card:#fff;--line:#d9e0da}
-@media (prefers-color-scheme:dark){:root{--bg:#0f201c;--fg:#e8efe9;--muted:#a9bbb4;--accent:#5fc2a6;--card:#14302A;--line:#2a4a42}}
+:root{--bg:#F8F4FC;--fg:#3B1A6B;--muted:#6A5A8A;--accent:#8A2BE2;--coral:#FF6B6B;--card:#fff;--line:#3B1A6B;--soft:#E6DCF3;--shadow:#3B1A6B}
+@media (prefers-color-scheme:dark){:root{--bg:#150F24;--fg:#F3ECFB;--muted:#B9A9D6;--accent:#CDA8FF;--card:#211838;--line:#5C4691;--soft:#2E2350;--shadow:#07040F}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{background:#1F6F5C;color:#fff;padding:20px 16px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Nunito,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,header b{font-family:Fredoka,"Arial Rounded MT Bold",system-ui,sans-serif;line-height:1.2}
+header{background:#FF6B6B;color:#fff;padding:18px 16px;border-bottom:3px solid #3B1A6B}
 header .wrap{display:flex;align-items:center;gap:12px}
-header img{width:44px;height:44px;border-radius:10px}
-header b{font-size:20px}
-header span{display:block;font-size:14px;opacity:.85}
+header img{width:48px;height:48px;background:#F8F4FC;border:2px solid #3B1A6B;border-radius:14px;padding:4px}
+header b{font-size:24px;font-weight:700}
+header span{display:block;font-size:14px;font-weight:700;color:#FFE3E0}
 .wrap{max-width:720px;margin:0 auto}
-main{padding:24px 16px 48px}
-h1{font-size:26px;margin:0 0 4px}
-h2{font-size:19px;margin:28px 0 8px}
+main{padding:28px 16px 48px}
+h1{font-size:30px;font-weight:700;margin:0 0 6px;color:var(--accent)}
+h2{font-size:21px;font-weight:600;margin:28px 0 8px}
 p,li{color:var(--fg)}
 .muted{color:var(--muted);font-size:14px}
-a{color:var(--accent)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+a{color:var(--accent);font-weight:700}
+.card{background:var(--card);border:2px solid var(--line);border-radius:18px;box-shadow:4px 4px 0 var(--shadow);padding:16px 18px;margin:20px 0}
 ol li,ul li{margin:4px 0}
-footer{border-top:1px solid var(--line);padding:16px;text-align:center;font-size:14px;color:var(--muted)}
+ul li::marker{color:var(--coral)}
+footer{border-top:2px solid var(--soft);padding:16px;text-align:center;font-size:14px;color:var(--muted)}
 footer a{margin:0 8px}
